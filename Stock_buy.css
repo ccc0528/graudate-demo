@@ -1,0 +1,829 @@
+/* =====================================引用google font字體=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grandstander:wght@100&family=Noto+Serif+TC:wght@500&family=Pacifico&family=Raleway:wght@100;400;700&family=Ranchers&family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    background-image: url("index_cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* =====================================導覽列======================================== */
+nav > ul {
+    background-color: #FBDECF;
+    color:#04076D;
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    padding: 15 30 20 30px;
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color:#FFBC9A;
+}
+
+.inline-block-nav {
+    text-align: right;
+    font-size: 0;   /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+/* ======================================首頁======================================== */
+.card {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.8);
+}
+.upper-section{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:100vh;
+    margin:0px;
+    background-size: cover;
+    background-image: url('index_cover.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    /* background-attachment:fixed; */
+    opacity: 0.5;
+    transition:all .4s ease-out;
+}
+.card:hover .upper-section{
+    opacity: 1;
+}
+.t1{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items:center;
+    /* justify-content: center; */
+    color:#04076D;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px; 
+}
+.t2{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+input::placeholder {
+    font-size: 14px;
+    text-align: center;
+    color: #ACABAE;
+}
+.login{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.email{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.password{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.button{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:320px;
+    left:55px;
+}
+.button-1{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.log{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    margin:30 25 20 0px;
+    outline: none
+}
+.log:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.sign{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:30 0 20 25px;
+    outline: none
+}
+.sign:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.fb{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3B5998;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 5 10 5px;
+    outline: none
+}
+.fb:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+/* ======================================註冊======================================== */
+.user{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.password-2{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.back{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    margin:30 25 20 0px;
+    outline: none
+}
+.back:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.start{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:30 0 20 25px;
+    outline: none
+}
+.start:hover{
+    background-color: black;
+    cursor: pointer;
+}
+/* ======================================個人======================================== */
+.Primary{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    margin:0px;
+    background-image: url('index_cover.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    /* background-attachment:fixed; */
+}
+.t3{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    align-items:flex-start;
+    font-size: 36px;
+    font-weight: bold;
+    /* letter-spacing: 3px;  */
+}
+.t4{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    /* justify-content: center; */
+    font-size: 25px;
+    font-weight: bold;
+    /* letter-spacing: 3px;  */
+}
+.t5{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background:rgb(255, 255, 255,0.7);
+}
+.continue{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    align-items:flex-start;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:0 0 25 100px;
+    outline: none
+}
+.continue:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.t6{
+    display:flex;
+    flex:0.2;
+    justify-content: center;
+    align-items: center;
+}
+.t5-1{
+    display:flex;
+    flex:0.3;
+    /* justify-content: center;
+    align-items: center; */
+    color:#3A2061;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.t5-2{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#04076D;
+    font-size: 20px;
+    font-weight: bold;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+td {
+    /* border: 3px solid rgb(255, 255, 255); */
+    width:120px;
+    text-align: center;
+}
+/* ======================================答題(排序)======================================== */
+.ans{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color:#04076D;
+    font-weight: bold;
+    background:rgb(255, 255, 255,0.8);
+    margin:0 50 15 50px;
+    height:420px;
+}
+/*
+.qiiz_t{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 20px;
+    margin:10 20 0 20px;
+}
+*/
+.a1{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:flex-start;
+    font-size: 20px;
+}
+.q1{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#04076D;
+    font-size: 20px;
+    font-weight: bold;
+    padding:0 15 0 15px;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.textans{
+    height:350px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+}
+.a2{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color:#04076D;
+    font-size: 25px;
+    font-weight: bold;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.ansq{
+    height:280px;
+    width:500px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+    text-align: left;
+}
+.choose{
+    position: relative;
+    top: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ans-button{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.true{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    background-color:red;
+    color:white;
+    height:150px;
+    width:300px;
+    z-index:200;
+    padding:10px;
+}
+.false{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    background-color:black;
+    color:white;
+    height:150px;
+    width:300px;
+    z-index:200;
+    padding:10px;
+}
+
+li.drag-sort-active {
+    background: transparent;
+    color: transparent;
+    border: 2px solid #04076D;
+}
+
+span.drag-sort-active {
+    background: transparent;
+    color: transparent;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container-ans li{
+    margin: 15 50px;
+    padding: 0 20px;
+    height: 30px;
+    width: 250px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #ffffff;
+    list-style: none;
+    font-weight:700;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    transition:all .3s ease-out;
+    flex:none;
+    font-size: 18;
+}
+
+/* ======================================課程======================================== */
+.ch_title{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color:#04076D;
+    font-weight: bold;
+    background:rgb(255, 255, 255,0.8);
+    margin:0 50 15 50px;
+    height:420px;
+}
+
+.ch_container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:flex-start;
+    font-size: 20px;
+    width: 1000px;
+    margin: 0 100px;
+}
+.left-chlist{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#04076D;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text-chlist{
+    height:180px;
+    width: 450px;
+    margin: 20 20 100 100px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+}
+.right-chlist{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color:#04076D;
+    font-size: 25px;
+    font-weight: bold;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.card-chlist{
+    float: left;
+    height:250px;
+    width:600px;
+    margin: 10 50px;
+    text-overflow:ellipsis;
+    text-align: left;
+}
+
+.cards {
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 25px;
+    background-color: white;
+    border-radius: 150px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.card-title{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    align-items:flex-start;
+    text-align:center;
+    font-size: 20px;
+    font-weight: 1200;
+    margin-top: 0;
+}
+
+.card-text {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    align-items:flex-start;
+    font-size: 16px;
+    font-weight: bold;
+    /* letter-spacing: 3px;  */
+}
+
+.tip {
+    margin-top: -50;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    text-shadow:0 2px 2px rgba(0, 0, 0, .2); ;
+}
+
+/* =====================================下單列表======================================== */
+.content {
+    display: block;
+}
+.upcontent {
+    display: block;
+    margin: 0 0 0 50;
+    padding: 10;
+    height: 40px;
+    width: auto;
+    background-color:none;
+    opacity: 0.8;
+}
+
+.listname_p {
+    float: left;
+    font-size: 36px;
+    font-display: center;
+    font-weight: 800;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    height: 40px;
+    width: 200px;
+    background-color: none;
+}
+
+.btn {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editlist_btn {
+    float: left;
+    display:inline;
+    font-size: 14px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 5 20px;
+    margin: 10px;
+    outline: none;
+}
+
+.editlist_btn:hover {
+    background-color: rgb(91, 92, 155);
+    cursor: pointer;
+}
+
+.maincontent {
+    font-display: center;
+    font-weight: 800;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    margin: auto;
+    height: 400px;
+    width: 1200px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.stocklist {
+    margin: 20px;
+    padding: 0 0 0 0px;
+    width: 500px;
+    float: left;
+    background-color: none;
+}
+
+th {
+    font-weight: 1200;
+    text-align: center;
+    color:#04076D;
+    border-spacing: 0;
+    font-size: 24px;
+    padding: 10 20px;
+}
+
+.buylist_t th {
+    padding: 10 40px;
+}
+
+td {
+    font-weight: 700;
+    text-align: right;
+    color:#04076D;
+    border-spacing: 0;
+    font-size: 18px;
+    padding: 10 20px;
+    vertical-align: bottom;
+}
+
+.buylist_t td {
+    padding: 10 10 10 50px;
+    text-align: right;
+}
+
+table thead {
+    height: 50px;
+    display: block;
+    white-space: nowrap;
+}
+
+table tbody {
+    height: 50px;
+    display: block;
+    white-space: nowrap;
+}
+
+-webkit-scrollbar
+-webkit-scrollbar-thumb
+-webkit-scrollbar-track
+
+tr:nth-child(even) {background-color: #0084ff31;}
+td:hover {background-color: #ffcf99;}
+
+.buylist {
+    margin: 100px;
+    padding: 10 10 10 10px;
+    width: 500px;
+    float: left;
+    background-color: none;
+}
+.buystockname {
+    display: block;
+    font-weight: 800;
+    color:#04076D;
+    font-size: 32px;
+    padding: 0 50px;
+    margin: 0 0 20 30px;
+    height: 20px;
+}
+
+.buylist {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0 0px;
+    background-color: none;
+}
+
+
+.buy_btn, .sell_btn, .whole_btn  {
+    float: inherit;
+    display:inline;
+    font-size: 24px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 70px;
+    outline: none;
+    width: 100px;
+}
+
+.chart_btn:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.buylist_t {
+    display:block;
+    align-items:center;
+    justify-content:center;
+}
+
+.buytype_name {
+    color: #3A2061;
+    font-size: 28px;
+    border-radius:10px;
+    background-color: #ffe7d3;
+    border: #04076D;
+    border-radius: 10px;
+    height: 150px;
+    width: 260px;
+    padding: 5 0 0 10px;
+    margin: 10px;
+    
+}
+
+.buytype_value {
+    color: #fd1717 ;
+    font-weight: 700;
+}
+
+.infor {
+    color: #3A2061;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius:10px;
+    border: #04076D;
+    border-radius: 10px;
+    height: 150px;
+    width: 260px;
+    padding: 5 0 0 10px;
+    margin: 10px;
+    
+}
+
+.buytype {
+    display: flex;
+    margin-left: 70px;
+    
+}
+
+.buytype_btn {
+    height: 50px;
+    width: 50px;
+    float: left;
+    display:inline;
+    font-size: 24px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:10px;
+    padding: 5 5px;
+    margin: 10px;
+    outline: none;
+}
+.type_btn {
+    height: 50px;
+    width: 250px;
+    float: left;
+    display:inline;
+    font-size: 24px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:10px;
+    padding: 5 5px;
+    margin: 10 20 10 20px;
+    outline: none;
+}
+input {
+    text-align: center;
+    font-size: 28px;
+    height: 50px;
+    width: 130px;
+    padding: 10px;
+    margin: 10 10 10 10px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+    border: none;
+    border-radius: 10px; }
+
+.buynumber {
+    display: flex;
+    margin-left: 70px;
+}
+
+.down_btn{
+    margin-left: 70px;
+}
+

@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Stock Dive</title>
+    <meta charset="utf-8">
+    <link href="Stock_buy.css" rel="stylesheet" type="text/css" />
+    <!-- 網頁標籤圖片 -->
+    <link rel="shortcut icon" href="./coin.png" type="image/x-icon">
+    <!-- 顯示小插圖 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="inline-block-nav">
+            <li><a href="Edit.html">編輯個人資料</a></li>
+            <li><a href="Lesson.html">課程總覽</a></li>
+            <li><a href="Personal.html">首頁</a></li>
+            <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="upcontent">
+            <div class="listname">
+                <p class="listname_p">下單系統</p>
+            </div>
+
+            <div class="btn">
+                <button class="editlist_btn">回到清單</button>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <div class="stocklist">
+                <table class="stocklist_t" cellpadding="0" cellspacing="0">
+                    <thead>
+                      <th>代碼</th>
+                      <th>商品</th>
+                      <th>成交</th>
+                      <th>漲跌</th>
+                      <th>幅度</th>
+                      <th>成交量</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2317</td>
+                        <td>鴻海</td>
+                        <td>119.0</td>
+                        <td>1.50</td>
+                        <td>1.28%</td>
+                        <td>39149</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="buylist_t" cellpadding="0" cellspacing="0">
+                    <thead>
+                      <th>委買量</th>
+                      <th>買價</th>
+                      <th>賣價</th>
+                      <th>委賣量</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>233</td>
+                        <td>118.50</td>
+                        <td>119.00</td>
+                        <td>2167</td>
+                      </tr>
+                      <tr>
+                        <td>1110</td>
+                        <td>118.00</td>
+                        <td>119.50</td>
+                        <td>2009</td>
+                      </tr>
+                      <tr>
+                        <td>3839</td>
+                        <td>117.50</td>
+                        <td>120.00</td>
+                        <td>2299</td>
+                      </tr>
+                      <tr>
+                        <td>5006</td>
+                        <td>117.00</td>
+                        <td>120.50</td>
+                        <td>763</td>
+                      </tr>
+                      <tr>
+                        <td>1477</td>
+                        <td>116.50</td>
+                        <td>121.00</td>
+                        <td>1226</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="buylist">
+                <div class="buystockname">
+                    <p>下單 - 鴻海</p>
+                </div>
+                <div class="buytype">
+                  <div class="buytype_name">
+                    <p>鴻海</p>
+                    <p class="buytype_value">119.0 漲1.5(1.28%)</p>
+                  </div>
+                  <div class="buytype_left btn">
+                    <button class="buytype_btn">現</button>
+                    <button class="buytype_btn">沖</button>
+                    <button class="buytype_btn">資</button>
+                    <button class="buytype_btn">券</button>
+                    <p class="infor"> 資:無限(60%) 券:0(90%) 可現沖</p>
+                  </div>
+                </div>
+                
+                
+                <div class="buynumber">
+                  <button class="buytype_btn">+</button>
+                  <input type="howmany" placeholder="輸入張數" >
+                  <button class="buytype_btn">-</button>
+                  <button class="type_btn">ROD</button>
+                </div>
+
+
+                <div class=" down_btn btn">
+                    <button class="buy_btn">買進</button>
+                    <button class="whole_btn">整 / 零</button>
+                    <button class="sell_btn">賣出</button>
+                </div>
+            </div>
+        </div>       
+    </div> 
+</body>
+</html>

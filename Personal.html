@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Stock Dive</title>
+    <meta charset="utf-8">
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <!-- 網頁標籤圖片 -->
+    <link rel="shortcut icon" href="./coin.png" type="image/x-icon">
+    <!-- 顯示小插圖 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <!-- 插入特效 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <nav>
+        <ul class="inline-block-nav">
+            <!--新增logo -->
+            <a href="personal.html" style="padding:0px"><img src="logo-3.png" alt="" style="border:0px; width:100x; height:60px;position:absolute;left:5px;"></a>
+            <input type="text" id="myInput" placeholder="Search">
+
+            <!-- <div class="container">
+                <input type="text" placeholder="Search...">
+                <div class="search"></div>
+              </div> -->
+
+            <li><a href="Edit.html">編輯個人資料</a></li>
+            <li><a href="Stock.html">個股清單</a></li>
+            <li><a href="Lesson.html">課程總覽</a></li>
+            <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+
+    <div class="Primary">
+        <!-- <form action="get.php" method="get"> -->
+        <div class="t3">
+            <!-- 新增特效 class -->
+            <h1 class="animate__animated animate__pulse" style="margin:35 30 10 100px;color:#04076D;">歡迎回來</h1>
+            <!-- 新增特效 class -->
+            <div class="t4 animate__animated animate__pulse">
+                <h1 style="margin:0 30 25 100px;color:white;">上次學習到</h1>
+                <h1 style="margin:0 10 25 0px;color:white;">1-2</h1>
+                <h1 style="margin:0 30 25 0px;color:white;">章節名稱</h1>
+            </div>
+            <!-- 不確定Button Type要不要修改 -->
+            <button type="button" class='continue' onclick="location.href='Answer.html'">Continue</button>            
+        </div>
+        <div class="t5">
+            <div class="t5-1" style="margin:0 0 0 100px;">
+                <!-- 新增特效 class -->
+                <h1 class="animate__animated animate__pulse">國際指數</h1>
+            </div>                
+            <table class="t5-2">
+                <tr>
+                    <td>恒生指數</td>
+                    <td>29,008.00</td>
+                    <td>-1066.17</td>
+                    <td>-3.55%</td>
+                </tr>
+                <tr>
+                    <td>加權指數</td>
+                    <td>15,953.80</td>
+                    <td>-498.38</td>
+                    <td>-3.03%</td>
+                </tr>
+                <tr>
+                    <td>道瓊指數</td>
+                    <td>31,402.01</td>
+                    <td>-559.85</td>
+                    <td>-1.75%</td>
+                </tr>
+                <tr>
+                    <td>納斯達克</td>
+                    <td>13,119.43</td>
+                    <td>-478.54</td>
+                    <td>-3.52%</td>
+                </tr>             
+            </table>
+            <!-- <div class="t5-2">
+                <h1 style="margin:10 0 10 0px;">恒生指數   29,008.00   -1066.17 -3.55%</h1>
+                <h1 style="margin:0 0 10 0px;">加權指數   15,953.80   -498.38   -3.03%</h1>
+                <h1 style="margin:0 0 10 0px;">道瓊指數   31,402.01   -559.85   -1.75%</h1>
+                <h1 style="margin:00 0 10 0px;">納斯達克   13,119.43   -478.54   -3.52%</h1>
+
+            </div> -->
+        </div>
+        <div class="t6"></div>
+   </div> 
+
+</body>
+</html>

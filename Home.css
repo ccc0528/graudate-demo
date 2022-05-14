@@ -1,0 +1,573 @@
+/* =====================================引用google font字體=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grandstander:wght@100&family=Noto+Serif+TC:wght@500&family=Pacifico&family=Raleway:wght@100;400;700&family=Ranchers&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+/* =====================================導覽列======================================== */
+#myInput {
+    position:absolute;
+    top:10px;
+    left:230px;
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height:40px;
+    font-size: 15px;
+    padding: 12px 30px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    outline:none;
+}
+
+nav > ul {
+    background-color: #FBDECF;
+    color:#04076D;
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    padding: 15 30 20 30px;
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color:#FFBC9A;
+}
+
+.inline-block-nav {
+    text-align: right;
+    font-size: 0;   /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+/* ======================================首頁======================================== */
+.card {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.8);
+}
+.upper-section{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:100vh;
+    margin:0px;
+    background-size: cover;
+    background-image: url('index_cover.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    /* background-attachment:fixed; */
+    opacity: 0.5;
+    transition:all .4s ease-out;
+}
+.card:hover .upper-section{
+    opacity: 1;
+}
+.t1{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items:center;
+    /* justify-content: center; */
+    color:#04076D;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px; 
+}
+.t2{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+input::placeholder {
+    font-size: 14px;
+    text-align: center;
+    color: #ACABAE;
+}
+.login{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.email{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.password{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.button{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:320px;
+    left:55px;
+}
+.button-1{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.log{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    margin:30 25 20 0px;
+    outline: none
+}
+.log:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.sign{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:30 0 20 25px;
+    outline: none
+}
+.sign:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+/* 0409這邊有修改 */
+.google{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:rgb(94, 94, 94);
+    background-color:white;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 5 10 5px;
+    outline: none;
+}
+.google:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+/* ======================================註冊======================================== */
+.user{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.password-2{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items:center;
+}
+.back{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    margin:30 25 20 0px;
+    outline: none
+}
+.back:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.start{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:30 0 20 25px;
+    outline: none
+}
+.start:hover{
+    background-color: black;
+    cursor: pointer;
+}
+/* ======================================個人======================================== */
+.Primary{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    margin:0px;
+    background-image: url('index_cover.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    /* background-attachment:fixed; */
+}
+.t3{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    align-items:flex-start;
+    font-size: 36px;
+    font-weight: bold;
+    /* letter-spacing: 3px;  */
+}
+.t4{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    /* justify-content: center; */
+    font-size: 25px;
+    font-weight: bold;
+    /* letter-spacing: 3px;  */
+}
+.t5{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background:rgb(255, 255, 255,0.7);
+}
+.continue{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    align-items:flex-start;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35 10 35px;
+    /* 上右下左 */
+    margin:0 0 25 100px;
+    outline: none
+}
+.continue:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.t6{
+    display:flex;
+    flex:0.2;
+    justify-content: center;
+    align-items: center;
+}
+.t5-1{
+    display:flex;
+    flex:0.3;
+    /* justify-content: center;
+    align-items: center; */
+    color:#3A2061;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.t5-2{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#04076D;
+    font-size: 20px;
+    font-weight: bold;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+td {
+    /* border: 3px solid rgb(255, 255, 255); */
+    width:120px;
+    text-align: center;
+}
+/* ======================================答題(選擇+填空)======================================== */
+.ans{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color:#04076D;
+    font-weight: bold;
+    background:rgb(255, 255, 255,0.8);
+    margin:0 50 15 50px;
+    height:420px;
+}
+/*
+.qiiz_t{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 20px;
+    margin:10 20 0 20px;
+}
+*/
+.a1{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:flex-start;
+    font-size: 20px;
+}
+.q1{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#04076D;
+    font-size: 20px;
+    font-weight: bold;
+    padding:0 15 0 15px;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.textans{
+    height:350px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+}
+
+.textsearch{
+    height:350px;
+    width:1120px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+}
+
+
+.a2{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#04076D;
+    font-size: 25px;
+    font-weight: bold;
+    /* background:rgb(255, 255, 255,0.5); */
+}
+.ansq{
+    height:270px;
+    width:450px;
+    overflow-y: scroll; 
+    text-overflow:ellipsis;
+    text-align: center;
+}
+.choose{
+    position: relative;
+    top: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ans-button{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.ansb1{
+    background-color:#3A2061;
+}
+.ansb1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansb2{
+    background-color:#3A2061;
+}
+.ansb2:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansb3{
+    background-color:#3A2061;
+}
+.ansb3:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb1{
+    background-color:#3A2061;
+}
+.ansqb1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb2{
+    background-color:#3A2061;
+}
+.ansqb2:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb3{
+    background-color:#3A2061;
+}
+.ansqb3:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.true{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    background-color:red;
+    color:white;
+    height:150px;
+    width:300px;
+    z-index:200;
+    padding:10px;
+}
+.false{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    background-color:black;
+    color:white;
+    height:150px;
+    width:300px;
+    z-index:200;
+    padding:10px;
+}
+/* ======================================編輯頁面======================================== */
+.Primary-2{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    margin:0px;
+    background-image: url('index_cover.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    /* background-attachment:fixed; */
+}
+.edit{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:flex-start; */
+    align-items:flex-start;
+    color:#04076D;
+    font-weight: bold;
+    width:600px;
+    background:rgb(255, 255, 255,0.8);
+    margin:10 0 10 0px;
+    /* height:450px; */
+}
+.edit_t{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color:#04076D;
+    font-weight: bold;
+    margin:0 50 5 50px;
+}
+.title_edit{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.edit_c{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.edit_i{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:0 0 0 35px;
+}
+.edit_yes{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 8 35 8 35px;
+    margin:15 0 8 0px;
+    /* 上右下左 */
+    outline: none
+}
+.edit_yes:hover{
+    background-color: black;
+    cursor: pointer;
+}

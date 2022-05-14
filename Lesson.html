@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>Stock Dive</title>
+    <meta charset="utf-8">
+    <link href="Ans_SA.css" rel="stylesheet" type="text/css" />
+    <!-- 網頁標籤圖片 -->
+    <link rel="shortcut icon" href="./coin.png" type="image/x-icon">
+    <!-- 顯示小插圖 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- swipe css -->
+    <link rel="stylesheet" href="swiper.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 12px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: block;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+        }
+
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
+        }
+
+        .card-title {
+            display: block;
+            font-size: 32px;
+            margin-top: 16px;
+        }
+
+        .card-text {
+            display: block;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="inline-block-nav">
+            <a href="personal.html" style="padding:0px"><img src="logo-3.png" alt="" style="border:0px; width:100x; height:60px;position:absolute;left:5px;"></a>
+            
+            <li><a href="Edit.html">編輯個人資料</a></li>
+            <li><a href="Stock.html">個股清單</a></li>
+            <li><a href="Personal.html">首頁</a></li>
+            <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+
+    <div class="Primary">
+        <!-- <form action="get.php" method="get"> -->
+        <div class="t4">
+            <h1 style="margin:15 30 20 50px;color:white;">正在進行的章節</h1>
+            <h1 style="margin:15 10 20 0px;color:white;">CH2</h1>
+            <h1 style="margin:15 30 20 0px;color:white;">單元名稱</h1>
+        </div>
+        <div class="ch_title">
+            <h1 style="margin:40 50px;font-size:36px;">2 投資產品介紹</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="card-title">1 金融大歷史</pc>
+                                <p class="card-text">1637鬱金香狂熱</p>
+                                <p class="card-text">1720南海泡沫事件</p>
+                                <p class="card-text">1792美國金融危機</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="card-title">2 投資產品介紹</pc>
+                                <p class="card-text">公債與基金</p>
+                                <p class="card-text">股票期貨與選擇權</p>
+                                <p class="card-text">ETF ETN與REITs</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="card-title">3 名詞一籮筐</pc>
+                                <p class="card-text">1637鬱金香狂熱</p>
+                                <p class="card-text">1720南海泡沫事件</p>
+                                <p class="card-text">1792美國金融危機</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="card-title">4 </pc>
+                                <p class="card-text">1637鬱金香狂熱</p>
+                                <p class="card-text">1720南海泡沫事件</p>
+                                <p class="card-text">1792美國金融危機</p>
+                        </div>
+                        <div class="swiper-slide">5</div>
+                        <div class="swiper-slide">6</div>
+                        <div class="swiper-slide">7</div>
+                        <div class="swiper-slide">8</div>
+                        <div class="swiper-slide">9</div>
+                        <div class="swiper-slide">
+                            <p class="card-title">10 </pc>
+                                <p class="card-text">1637鬱金香狂熱</p>
+                                <p class="card-text">1720南海泡沫事件</p>
+                                <p class="card-text">1792美國金融危機</p>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

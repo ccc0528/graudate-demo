@@ -1,0 +1,206 @@
+/* =====================================引用google font字體=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grandstander:wght@100&family=Noto+Serif+TC:wght@500&family=Pacifico&family=Raleway:wght@100;400;700&family=Ranchers&family=Shadows+Into+Light&display=swap');
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    background-image: url("index_cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* =====================================導覽列======================================== */
+nav {
+    height: 80px;
+}
+nav > ul {
+    background-color: #FBDECF;
+    color:#04076D;
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    padding: 15 30 20 30px;
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color:#FFBC9A;
+}
+
+.inline-block-nav {
+    text-align: right;
+    font-size: 0;   /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+/* =====================================主內容======================================== */
+.content {
+    display: block;;
+}
+.upcontent {
+    display: block;
+    margin: 20 auto;
+    padding: 0;
+    height: 80px;
+    width: 1800px;
+    background-color:none;
+    opacity: 0.8;
+}
+
+.listname_p {
+    float: left;
+    font-size: 60px;
+    font-display: center;
+    font-weight: 800;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    width: 300px;
+    height: 80px;
+    background-color: none;
+}
+
+.btn {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editlist_btn {
+    float: left;
+    display:inline;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35px;
+    margin: 20px;
+    outline: none;
+}
+
+.editlist_btn:hover {
+    background-color: rgb(91, 92, 155);
+    cursor: pointer;
+}
+
+.maincontent {
+    font-size: 60px;
+    font-display: center;
+    font-weight: 800;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    margin: auto;
+    height: 740px;
+    width: 1800px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.stocklist {
+    margin: auto;
+    padding: 0 0 50 0px;
+    width: 900px;
+    float: left;
+}
+
+th {
+    font-weight: 900;
+    text-align: center;
+    color:#04076D;
+    border-spacing: 0;
+    font-size: 36px;
+    padding: 20 30px;
+}
+
+td {
+    font-weight: 600;
+    text-align: right;
+    color:#04076D;
+    border-spacing: 0;
+    font-size: 36px;
+    padding: 10 30px;
+    vertical-align: bottom;
+}
+
+table thead {
+    height: 100px;
+    display: block;
+    white-space: nowrap;
+}
+
+table tbody {
+    height: 600px;
+    display: block;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+-webkit-scrollbar
+-webkit-scrollbar-thumb
+-webkit-scrollbar-track
+
+tr:nth-child(even) {background-color: #0084ff31;}
+td:hover {background-color: #ffcf99;}
+
+.chart {
+    margin: auto;
+    padding: 0 0 0 50px;
+    width: 850px;
+    height: 700px;
+    float: left;
+}
+.title {
+    display: inline-block;
+    font-weight: 800;
+    color:#04076D;
+    font-size: 36px;
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+}
+
+.mainchart {
+    width: 800px;
+    height: 525px;
+    margin: 20 0 0 0px;
+    background-color: #ffbf6cc5;
+}
+
+.chart_btn {
+    float: inherit;
+    display:inline;
+    font-size: 20px;
+    font-weight: bold;
+    align-items:center;
+    color:white;
+    background-color:#3A2061;
+    border-width:0px;
+    border-radius:40px;
+    padding: 10 35px;
+    margin: 0 70px;
+    outline: none;
+}
+
+.chart_btn:hover {
+    background-color: rgb(91, 92, 155);
+    cursor: pointer;
+}

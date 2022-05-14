@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>Stock Dive</title>
+    <meta charset="utf-8">
+    <link href="Stock.css" rel="stylesheet" type="text/css" />
+    <!-- 網頁標籤圖片 -->
+    <link rel="shortcut icon" href="./coin.png" type="image/x-icon">
+    <!-- 顯示小插圖 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="inline-block-nav">
+          <a href="personal.html" style="padding:0px"><img src="logo-3.png" alt="" style="border:0px; width:100x; height:60px;position:absolute;left:5px;"></a>
+
+          <li><a href="Edit.html">編輯個人資料</a></li>
+          <li><a href="Lesson.html">課程總覽</a></li>
+          <li><a href="Personal.html">首頁</a></li>
+          <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="upcontent">
+            <div class="listname">
+                <p class="listname_p">鴻海集團</p>
+            </div>
+
+            <div class="btn">
+                <button class="editlist_btn">編輯清單</button>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <div class="stocklist">
+                <table class="stocklist_t" cellpadding="0" cellspacing="0">
+                    <thead>
+                      <th>代碼</th>
+                      <th>商品</th>
+                      <th>成交</th>
+                      <th>漲跌</th>
+                      <th>幅度</th>
+                      <th>成交量</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2314</td>
+                        <td>台揚</td>
+                        <td>41.5</td>
+                        <td>1.55</td>
+                        <td>3.88</td>
+                        <td>22878</td>
+                      </tr>
+                      <tr>
+                        <td>2317</td>
+                        <td>鴻海</td>
+                        <td>122.5</td>
+                        <td>2.00</td>
+                        <td>1.66</td>
+                        <td>30294</td>
+                      </tr>
+                      <tr>
+                        <td>2328</td>
+                        <td>廣宇</td>
+                        <td>42.7</td>
+                        <td>0.15</td>
+                        <td>0.35</td>
+                        <td>18412</td>
+                      </tr>
+                      <tr>
+                        <td>2354</td>
+                        <td>鴻準</td>
+                        <td>43.85</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>5164</td>
+                      </tr>
+                      <tr>
+                        <td>3062</td>
+                        <td>建漢</td>
+                        <td>42.7</td>
+                        <td>0.15</td>
+                        <td>0.35</td>
+                        <td>18412</td>
+                      </tr>
+                      <tr>
+                        <td>3149</td>
+                        <td>正達</td>
+                        <td>43.85</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>5164</td>
+                      </tr><tr>
+                        <td>3413</td>
+                        <td>京鼎</td>
+                        <td>42.7</td>
+                        <td>0.15</td>
+                        <td>0.35</td>
+                        <td>18412</td>
+                      </tr>
+                      <tr>
+                        <td>3437</td>
+                        <td>榮創</td>
+                        <td>43.85</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>5164</td>
+                      </tr><tr>
+                        <td>3481</td>
+                        <td>群創</td>
+                        <td>43.95</td>
+                        <td>0.10</td>
+                        <td>0.34</td>
+                        <td>3844</td>
+                      </tr>
+                        <tr>
+                        <td>2207</td>
+                        <td>正新</td>
+                        <td>43.95</td>
+                        <td>0.10</td>
+                        <td>0.34</td>
+                        <td>3844</td>
+                      </tr>
+                      </tr><tr>
+                        <td>2207</td>
+                        <td>正新</td>
+                        <td>43.95</td>
+                        <td>0.10</td>
+                        <td>0.34</td>
+                        <td>3844</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="chart">
+                <div class="title">
+                    <p>2317 - 鴻海</p>
+                </div>
+                <div class="mainchart" id="chart" height="300" width="730" style="margin:0px;"></div>
+                <div class="btn">
+                    <button class="chart_btn">上一檔</button>
+                    <button class="chart_btn">下一檔</button>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <script src="text.js"></script>
+</body>
+</html>

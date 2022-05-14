@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Stock Dive</title>
+    <meta charset="utf-8">
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <!-- 網頁標籤圖片 -->
+    <link rel="shortcut icon" href="./coin.png" type="image/x-icon">
+    <!-- 顯示小插圖 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <!-- 插入特效 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <nav>
+        <ul class="inline-block-nav">
+            <!--新增logo -->
+            <a href="personal.html" style="padding:0px"><img src="logo-3.png" alt="" style="border:0px; width:100x; height:60px;position:absolute;left:5px;"></a>
+
+            <li><a href="Stock.html">個股清單</a></li>
+            <li><a href="Lesson.html">課程總覽</a></li>
+            <li><a href="Personal.html">首頁</a></li>
+            <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+
+    <!-- <form action="get.php" method="get"> -->
+    <form action="" class="Primary-2">
+        <!-- 新增特效 class -->
+        <div class="edit animate__animated animate__bounceInLeft">
+            <div class="title_edit">
+                <h1 style="margin:18 30 0 50px;color:#04076D;font-size:45px;">編輯資料</h1>
+            </div>
+
+            <div class="edit_t">
+                <div class="edit_c">
+                    <h1 style="font-size:25px;margin:0 20 30 0px;">名稱</h1>
+                    <h1 style="font-size:25px;margin:0 20 30 0px;">信箱</h1>
+                    <h1 style="font-size:25px;margin:0 20 30 0px;">舊密碼</h1>
+                    <h1 style="font-size:25px;margin:0 20 30 0px;">新密碼</h1>
+                    <h1 style="font-size:25px;margin:0 20 30 0px;">確認新密碼</h1>
+                </div>
+                <div class="edit_i">
+                    <input required type="text" style="font-size:25px;padding:5px;background-color:white;border-width:0px;outline: none;margin:45 0 25 0px;border-radius: 100px; text-align: center;"placeholder="請輸入使用者名稱(英文+數字)">
+                    <input required type="text" style="font-size:25px;padding:5px;background-color:white;border-width:0px;outline: none;margin:0 0 25 0px;border-radius: 100px;text-align: center;"placeholder="請輸入信箱">
+                    <input required type="password" style="font-size:25px;padding:5px;background-color:white;border-width:0px;outline: none;margin:0 0 25 0px;border-radius: 100px;text-align: center;"placeholder="請輸入舊密碼(英文+數字)">
+                    <input required type="password" style="font-size:25px;padding:5px;background-color:white;border-width:0px;outline: none;margin:0 0 25 0px;border-radius: 100px;text-align: center;"placeholder="請輸入新密碼">
+                    <input required type="password" style="font-size:25px;padding:5px;background-color:white;border-width:0px;outline: none;margin:0 0 8 0px;border-radius: 100px;text-align: center;"placeholder="請再次輸入新密碼">
+                    <div>
+                        <!-- 不確定輸入完 button要跳轉到哪頁 -->
+                        <button type="submit" class='edit_yes' onclick="location.href='Personal.html'">確認</button>
+                    </div>                
+                </div>
+            </div>
+        </div>        
+    </form>
+</body>
+</html>
