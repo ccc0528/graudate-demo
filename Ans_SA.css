@@ -405,24 +405,24 @@ td {
     align-items:center;
 }
 
-.ansb1{
+.ansqb1{
     background-color:#3A2061;
 }
-.ansb1:hover{
+.ansqb1:hover{
     background-color: black;
     cursor: pointer;
 }
-.ansb2{
+.ansqb2{
     background-color:#3A2061;
 }
-.ansb2:hover{
+.ansqb2:hover{
     background-color: black;
     cursor: pointer;
 }
-.ansb3{
+.ansqb3{
     background-color:#3A2061;
 }
-.ansb3:hover{
+.ansqb3:hover{
     background-color: black;
     cursor: pointer;
 }
