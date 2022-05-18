@@ -404,6 +404,50 @@ td {
     justify-content: space-between;
     align-items:center;
 }
+
+.ansb1{
+    background-color:#3A2061;
+}
+.ansb1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansb2{
+    background-color:#3A2061;
+}
+.ansb2:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansb3{
+    background-color:#3A2061;
+}
+.ansb3:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb1{
+    background-color:#3A2061;
+}
+.ansqb1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb2{
+    background-color:#3A2061;
+}
+.ansqb2:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.ansqb3{
+    background-color:#3A2061;
+}
+.ansqb3:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
 .true{
     position:absolute;
     display:flex;
